@@ -6,7 +6,10 @@
     "test": "npx playwright test",
     "test:login": "npx playwright test tests/specs/06-login.spec.ts",
     "test:e2e": "npx playwright test tests/specs/07-agent-e2e.spec.ts",
+    "test:assignment1": "npx playwright test tests/assignment1/specs/",
+    "test:assignment2": "npx playwright test tests/assignment2/specs/",
     "build:scenarios": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' tests/scenarios/build-scenarios.ts",
+    "build:assignment2": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' tests/assignment2/scenarios/build-e2e-scenarios.ts",
     "report": "npx playwright show-report"
   },
   "devDependencies": {
