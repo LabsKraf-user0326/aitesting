@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Generated test outputs
+tests/results/
+
+# Environment
+.env
+

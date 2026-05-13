@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--browser", "chromium"],
+      "env": {}
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/ams/Desktop/aiTesting"
+      ],
+      "env": {}
+    },
+    "excel": {
+      "command": "npx",
+      "args": ["-y", "@negokaz/excel-mcp-server"],
+      "env": {
+        "EXCEL_MCP_PAGING_CELLS_LIMIT": "5000"
+      }
+    },
+    "mysql": {
+      "command": "npx",
+      "args": ["-y", "@benborla29/mcp-server-mysql"],
+      "env": {
+        "MYSQL_HOST": "127.0.0.1",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASS": "",
+        "MYSQL_DB": "testdb"
+      }
+    },
+    "rest-api": {
+      "command": "npx",
+      "args": ["-y", "mcp-rest-api"],
+      "env": {
+        "API_BASE_URL": "https://reqres.in/api"
+      }
+    }
+  }
+}

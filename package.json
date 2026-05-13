@@ -1,0 +1,19 @@
+{
+  "name": "aitesting",
+  "version": "1.0.0",
+  "description": "MCP Agent — Playwright test suite for saucedemo.com",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:login": "npx playwright test tests/specs/06-login.spec.ts",
+    "test:e2e": "npx playwright test tests/specs/07-agent-e2e.spec.ts",
+    "build:scenarios": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' tests/scenarios/build-scenarios.ts",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "exceljs": "^4.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
