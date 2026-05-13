@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+~./
 
 # Playwright
 /test-results/
@@ -7,10 +8,26 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+/.cache
 
 # Generated test outputs
 tests/results/
 
 # Environment
 .env
+
+# Editor and tool settings
+.claude/local-agent-mode-sessions/
+
+# pnpm/Playwright cache
+.cache/
+
+# Ignore lock file if not needed (optional, usually keep)
+# package-lock.json
+
+# Ignore Playwright/test artifacts
+tests/results/logs/
+tests/results/screenshots/
+tests/results/reports/
+tests/scenarios/login-scenarios.xlsx
 
